@@ -15,7 +15,7 @@ int binaryToDecimal(int decimalNumber){
 }
 
 int main(){
-    int number = 5; 
+    int number = 100; 
     int binaryForm = binaryToDecimal(number);
     cout<<"Binary Form of "<<number<<" is = "<<binaryForm<<endl;
 
