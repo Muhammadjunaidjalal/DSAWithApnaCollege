@@ -1,7 +1,7 @@
 #include <iostream> 
 using namespace std; 
 
-int BinaryToDecimal(int decimalNumber){
+int binaryToDecimal(int decimalNumber){
     
     int answer =0, power =1; 
     while(decimalNumber>0){
@@ -16,7 +16,7 @@ int BinaryToDecimal(int decimalNumber){
 
 int main(){
     int number = 5; 
-    int BinaryForm = BinaryToDecimal(number);
-    cout<<"Binary Form of "<<number<<" is = "<<BinaryForm<<endl;
+    int binaryForm = binaryToDecimal(number);
+    cout<<"Binary Form of "<<number<<" is = "<<binaryForm<<endl;
 
 }
