@@ -2,6 +2,7 @@
 #include <vector> 
 using namespace std; 
 
+//To Calculate the Maximum Profit Form the Given Prices (Array).. in O(N)
 int maximumProfit(vector<int> &prices){
     int maximumProfit = 0, bestBuy = prices[0];
 
