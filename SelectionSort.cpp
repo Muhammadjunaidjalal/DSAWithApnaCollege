@@ -1,18 +1,16 @@
 #include <iostream> 
 using namespace std; 
 
-//Bubble Sorting Using in... O(N^2)
-void selectionSort(int arr[], int size){
-    for(int i =0; i<size-1; i++){
-        int minIdx =i; 
-        for(int j=i+1; j<size; j++){
-            if(arr[j]<arr[minIdx]){
-                minIdx =j;
-            }
+//Insertion Sorting Using in... O(N^2)
+void insertionSort(int arr[], int size){
+    for(int i =0; i<size; i++){
+        int curr = arr[i];
+        int prev = i-1;
+        while(prev>=0 && arr[prev]>curr){
+            arr[prev+1] = arr[prev];
+            prev--;
         }
-        if(minIdx!=i){
-            swap(arr[i],arr[minIdx]);
-        }
+        arr[prev+1]=curr;
     }
 }
 
@@ -28,7 +26,7 @@ int main(){
     int size = 5; 
     int arr[size]={5,7,3,9,2};
 
-    selectionSort(arr,size);
+    insertionSort(arr,size);
     printArray(arr,size); // 2,3,5,7,9
     return 0; 
 }
