@@ -17,20 +17,3 @@ void bubbleSort(int arr[], int size){
             }
     }
 }
-
-void printArray(int arr[], int size){
-    for(int i =0; i<size; i++){
-        cout<<arr[i]<< " ";
-    }
-    cout<<endl;
-}
-
-int main(){
-
-    int size = 5; 
-    int arr[size]={5,7,3,9,2};
-
-    bubbleSort(arr,size);
-    printArray(arr,size); // 2,3,5,7,9
-    return 0; 
-}

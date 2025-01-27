@@ -27,7 +27,7 @@ void printArray(int arr[], int size){
 
 int main(){
 
-    int size = 5; 
+    int const size = 5; 
     int arr[size]={2,0,1,2,1};
 
     DNFSorting(arr,size);
